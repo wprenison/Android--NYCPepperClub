@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">NYC Pepper Club</string>
+    <string name="title_activity_itinerary">Your Itinerary</string>
+    <string name="title_activity_location_acitvity">Event Locations</string>
+    <string name="title_activity_help">Help</string>
+    <string name="help_helpTitle">Help</string>
+    <string name="help_desc">App purpose: \nAn app for a concierge firm that sells entertainment packages to customers. This app allows the company to provide the customer with an itinerary linked to their account from a live server. The itinerary can then be browsed and details like location, time and date can be seen.\n The Client can navigate to these locations or call the concierge company from the app. \n\nMultiple accounts are available for testing.\nUsername:Password\nguest:abc\nwprenison:abc\nalcroucher:abc \n\nNOTE the first time clicking on an itinerary item might take a few minutes for google maps to instantiate, please be patient.</string>
+
+</resources>

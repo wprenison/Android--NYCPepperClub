@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="holo_dark">#222222</color>
+    <color name="light_pink">#faa7b3</color>
+    <color name="light_blue">#8bdfdb</color>
+    <color name="pink">#f47083</color>
+    <color name="blue">#42b7b4</color>
+    <color name="white">#ffffff</color> 
+    <color name="red">#EB0000</color>   
+    <color name="teal_blue">#4c9acd</color>
+    <color name="holo_dark_highlight">#2a4862</color>
+</resources>

@@ -1,0 +1,132 @@
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/holo_dark" >
+    
+    <LinearLayout
+        android:id="@+id/linlayAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:orientation="vertical" 
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:visibility="gone">
+	
+		<TextView 
+		    android:id="@+id/txtvAddressTitle"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:text="Address"
+		    android:textSize="20sp"
+		    android:textColor="@color/teal_blue"/>
+		
+		<TextView
+		    android:id="@+id/txtvStreet"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:textSize="16sp"
+		    android:textColor="@color/white"
+		    android:layout_marginTop="1dp"
+		    android:layout_marginBottom="1dp"
+		    android:layout_marginLeft="5dp"
+		    android:layout_marginRight="5dp"/>
+		
+		<TextView 
+		    android:id="@+id/txtvCity"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:textSize="16sp"
+		    android:textColor="@color/white"
+		    android:layout_marginTop="1dp"
+		    android:layout_marginBottom="1dp"
+		    android:layout_marginLeft="5dp"
+		    android:layout_marginRight="5dp"/>
+		
+		<TextView 
+		    android:id="@+id/txtvPostalCode"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:textSize="16sp"
+		    android:textColor="@color/white"
+		    android:layout_marginTop="1dp"
+		    android:layout_marginBottom="1dp"
+		    android:layout_marginLeft="5dp"
+		    android:layout_marginRight="5dp"/>
+			
+	</LinearLayout>
+	
+     <ProgressBar 
+            android:id="@+id/progbLoadImages"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0.5"
+            android:indeterminate="true"/>
+	
+    <LinearLayout
+        android:id="@+id/linlayMap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="30"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="5dp" 
+        android:visibility="gone"> 	
+               
+	    <fragment
+	        android:id="@+id/Map"
+	        android:name="com.google.android.gms.maps.MapFragment"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent" />
+    
+	</LinearLayout>
+	
+    <LinearLayout
+        android:id="@+id/linlayButtons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.25"
+        android:orientation="horizontal"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:visibility="gone" >
+	    
+	    <ImageButton
+	        android:id="@+id/btnWhereAmI"
+	        android:layout_width="wrap_content"
+	        android:layout_height="match_parent"
+	        android:layout_marginTop="1dp"
+		    android:layout_marginBottom="1dp"
+		    android:layout_marginLeft="5dp"
+		    android:layout_marginRight="5dp" 
+		    style="?android:attr/buttonBarButtonStyle"
+		    android:onClick="onClickWhereAmI"
+		    android:src="@drawable/btn_where_am_i" 
+		    android:layout_weight="1"/>
+	    
+	    <ImageButton
+	        android:id="@+id/btnCall"
+	        android:layout_width="wrap_content"
+	        android:layout_height="match_parent"
+	        android:layout_marginTop="1dp"
+		    android:layout_marginBottom="1dp"
+		    android:layout_marginLeft="5dp"
+		    android:layout_marginRight="5dp"
+		    style="?android:attr/buttonBarButtonStyle"
+		    android:onClick="onClickCall"
+		    android:src="@drawable/btn_call"
+		    android:layout_weight="1" />
+	</LinearLayout>
+	
+</LinearLayout>
+
+
+
+

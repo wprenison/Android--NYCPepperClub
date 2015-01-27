@@ -1,0 +1,47 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/holo_dark" >
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        
+        <TextView 
+            android:id="@+id/txtvWelcome"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:textColor="@color/teal_blue"/>
+        
+        <ImageButton 
+            android:id="@+id/ibtnHelp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/btn_help"
+            style="?android:attr/buttonBarButtonStyle"
+            android:onClick="onClickHelp"/>
+                
+        
+    </LinearLayout>
+    
+    <ListView 
+        android:id="@+id/lstvItinerary"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="15dp"
+        android:textFilterEnabled="true"
+        android:animateLayoutChanges="true"
+        android:choiceMode="singleChoice"
+        android:listSelector="@drawable/listview_selector"
+        ></ListView>
+    
+
+</LinearLayout>

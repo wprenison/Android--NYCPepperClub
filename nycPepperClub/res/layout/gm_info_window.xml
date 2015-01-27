@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="@color/holo_dark" >
+    
+    <ImageView 
+        android:id="@+id/imgvPlaceImage"
+        android:layout_width="75dp"
+        android:layout_height="75dp"/>
+    
+    <LinearLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="10dp">
+        
+	    <TextView 
+	        android:id="@+id/txtvTitle"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:textSize="18sp"
+	        android:textColor="@color/teal_blue"
+	        android:text="This is the title"/>
+	    
+	    <TextView 
+	        android:id="@+id/txtvDateAndTime"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:textSize="14sp"
+	        android:textColor="@color/white"
+	        android:text="This is time and date"/>
+	    
+	    <TextView 
+	        android:id="@+id/txtvSummary"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:textSize="14sp"
+	        android:textColor="@color/white"
+	        android:text="This is the summary"/>
+	    
+	    <TextView 
+	        android:id="@+id/txtvClickForNav"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:textSize="10sp"
+	        android:textColor="@color/white"
+	        android:text="Click for navigation"/>
+	    
+	   </LinearLayout>
+
+</LinearLayout>
